@@ -1,0 +1,114 @@
+/*
+PRIMARY COLORS USED:
+Light grey: #f5f5f5;
+Almost black: #2b2c2e;
+White: #ffffff;
+
+SECONDARY COLORS USED:
+Red (dark): #f65c39;
+Red (light): #ffa18d;
+Purple (dark): #4d63d4;
+Purple (light): #a2aeeb;
+Turquoise (dark): #27cce1;
+Turquoise (light): #b1f6ff;
+*/
+
+
+body {
+background-color: #f5f5f5;
+font-family: 'Karla', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height:1.6;
+color: rgba(0,0,0,0.9);
+}
+
+h1 {
+font-family: 'Lora', serif;
+font-size: 3.125em;
+font weight:700;
+line-height: 1.4;
+color: rgba(0,0,0,0.9);
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 2.25em;
+  font-weight:600;
+  line-height: 1.4;
+  color: rgba(0,0,0,0.9);
+}
+
+h3 {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.75em;
+  font-weight: 600;
+  font-style: italic;
+  line height: 1.4;
+  color: rgba(0,0,0,0.95)
+}
+
+h4 {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line height: 1.4;
+  color: rgba(0,0,0,0.85)
+}
+
+h5 {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line height: 1.4;
+  color: rgba(0,0,0,0.8)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #4d63d4;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #a2aeeb;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #4d63d4;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #a2aeeb; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #4d63d4;
+  text-transform: uppercase;
+  border: 2px solid #4d63d4;
+}
+.button.contact:hover {
+  background-color: #4d63d4;
+  color: #ffffff;
+}

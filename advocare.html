@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <!-- HEADER1 - NAME - BEGINS -->
+  <head>
+    <!--NORMALIZE CSS LINK-->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <!--CSS STYLESHEET LINK-->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Heather Fulton">
-    <meta name="description" content="Heather Fulton, UX Design, Graphic Design, UI Design, UX Research, UXR, designer, portfolio, remote, Toronto">
+      <!--GOOGLE WEB FONT EMBED BEGINS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      <!--GOOGLE WEB FONT EMBED ENDS-->
 
-  <title>Heather Fulton - Design Portfolio - Advocare</title>
-</head>
+      <!--VIEWPORT--> <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-  <!-- Header Section -->
+    <meta charset="utf-8">
+    <meta name="author" content="Heather Fulton">
+      <meta name="description" content="Heather Fulton, UX Design, Graphic Design, UI Design, UX Research, UXR, designer, portfolio, remote, Toronto">
+
+    <title>Heather Fulton - Design Portfolio - Advocare</title>
+  </head>
+
+<!-- HEADER1 - NAME - ENDS -->
+
+  <!-- HEADER 2 - NAVIGATION - BEGINS -->
   <header>
-    <div>
-     <a href="index.html"> <img src="img/hf-logo.svg" alt="Heather Fulton">
+    <div id="topnav">
+     <a href="index.html"> <img src="https://i.ibb.co/ccW9jsr/html-logo.png" alt="Heather Fulton"></a>
       <nav>
         <ul>
         <li><a href="work.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
- <main><!-- MAIN CONTENT BEGINS-->
+    <!-- HEADER 2 - NAVIGATION - ENDS-->
 
-</main><!--MAIN CONTENT ENDS-->
-<!--PROJECT BEGINS-->
-<body>
-  <div>
-    <div><!--PROJECT TITLE BEGINS-->
+<!--MY WORK BEGINS-->
+  <div id="mywork">
+    <div id="proj-advocare"><!--PROJECT TITLE BEGINS-->
       <h1>Advocare</h1>
     </div><!--PROJECT TITLE ENDS-->
 
     <div><!--PROJECT THUMBNAIL PIC BEGINS-->
       <picture>
-        <source src="img/featured_advocare@1x.png" media="(max-width:200px)">
-          <img src="img/featured_advocare@2x.png" alt="Advocare mobile app">
+        <source srcset="img/featured_advocare@1x.png" media="(max-width:600px)">
+          <img src="img/featured_advocare@2x.png" alt="Advocare mobile app" class="responsive">
       </picture>
     </div><!--PROJECT THUMBNAIL PIC ENDS-->
 
@@ -43,7 +56,7 @@
       <h2>Overview</h2>
       <div><!--IMG BEGINS-->
         <picture>
-          <source src="img/advocare/advocare_splash@1x.png" media="(max-width:200px)">
+          <source srcset="img/advocare/advocare_splash@1x.png" media="(max-width: 200px)">
             <img src="img/advocare/advocare_splash@2x.png" alt="Advocare splash screen">
         </picture>
       </div><!--IMG ENDS-->
@@ -79,7 +92,7 @@
         <h2>Defining the Problem</h2>
         <div><!--IMG BEGINS-->
           <picture>
-            <source src="img/advocare/advocare_illus1@1x.png" media="(max-width:200px)">
+            <source srcset="img/advocare/advocare_illus1@1x.png" media="(max-width:200px)">
               <img src="img/advocare/advocare_illus1@2x.png" alt="doctor and patient illustration">
           </picture>
         </div><!--IMG ENDS-->
@@ -110,14 +123,14 @@
               <ul>
                 <li>Systemic barriers and challenges navigating health care systems are widely reported</li>
                 <li>People living with chronic health issues are susceptible to being misunderstood and have their serious concerns dismissed</li>
+              </ul>
                     <div><!--IMG BEGINS-->
                       <picture>
-                        <source src="img/advocare/advocare_stat1@1x.png" media="(max-width:300px)">
+                        <source srcset="img/advocare/advocare_stat1@1x.png" media="(max-width:300px)">
                           <img src="img/advocare/advocare_stat1@2x.png" alt="statistic 1">
                       </picture>
                     </div><!--IMG ENDS-->
-              </ul>
-              <p>Common consequences of systemic health care barriers:</p>
+              <h5>Common consequences of systemic health care barriers:</h5>
               <ul>
                 <li>delayed diagnosis & treatment</li>
                 <li>significant and unnecessary medical debt</li>
@@ -130,20 +143,21 @@
                 <p>Results indicate the majority of users must interact regularly with health care providers (doctors, specialists, therapists, imaging technicians, etc)</p>
                 <div><!--IMG BEGINS-->
                   <picture>
-                    <source src="img/advocare/advocare_stat2@1x.png" media="(max-width:300px)">
+                    <source srcset="img/advocare/advocare_stat2@1x.png" media="(max-width:300px)">
                       <img src="img/advocare/advocare_stat2@2x.png" alt="statistic 2">
                   </picture>
                 </div><!--IMG ENDS-->
               <h4>User Satisfaction of Competitor Products</h4>
               <p>Users were asked:<b>How helpful is/are the app(s) you've used in managing your chronic health condition?</b>
                 </p>
+              <ul>
+                <li><b>50%</b> rated the helpfulness of these apps at <b>3/5 or below</b></li>
+                <li><b>Only 13%</b> of users rated the apps at <b>5/5</b></li>
+                <li>Results show a need and opportunity for improvement of user experience</li>
               </ul>
-              <li><b>50%</b> rated the helpfulness of these apps at <b>3/5 or below</b></li>
-              <li><b>Only 13%</b> of users rated the apps at <b>5/5</b></li>
-              <li>Results show a need and opportunity for improvement of user experience</li>
               <div><!--IMG BEGINS-->
                 <picture>
-                  <source src="img/advocare/advocare_stat3@1x.png" media="(max-width:300px)">
+                  <source srcset="img/advocare/advocare_stat3@1x.png" media="(max-width:300px)">
                     <img src="img/advocare/advocare_stat3@2x.png" alt="statistic 3">
                 </picture>
               </div><!--IMG ENDS-->
@@ -154,7 +168,7 @@
           <h3>AHRQ QuestionBuilder</h3>
             <div><!--IMG BEGINS-->
               <picture>
-                <source src="img/advocare/advocare_ahrq@1x.png" media="(max-width:300px)">
+                <source srcset="img/advocare/advocare_ahrq@1x.png" media="(max-width:300px)">
                 <img src="img/advocare/advocare_ahrq@2x.png" alt="ahrq logo">
               </picture>
           </div><!--IMG ENDS-->
@@ -163,7 +177,7 @@
           <h3>FlareDown</h3>
           <div><!--IMG BEGINS-->
             <picture>
-              <source src="img/advocare/advocare_flare@1x.png" media="(max-width:300px)">
+              <source srcset="img/advocare/advocare_flare@1x.png" media="(max-width:300px)">
               <img src="img/advocare/advocare_flare@2x.png" alt="Flaredown logo">
             </picture>
         </div><!--IMG ENDS-->
@@ -177,7 +191,7 @@
             </p>
             <div><!--IMG BEGINS-->
               <picture>
-                <source src="img/advocare/advocare_treatment@1x.png" media="(max-width:300px)">
+                <source srcset="img/advocare/advocare_treatment@1x.png" media="(max-width:300px)">
                 <img src="img/advocare/advocare_treatment@2x.png" alt="design iterations for treatment feature">
               </picture>
           </div><!--IMG ENDS-->
@@ -187,7 +201,7 @@
               As the design progressed I switched to a single dedicated Dashboard that would include information relevant to all conditions the user is tracking.</p>
               <div><!--IMG BEGINS-->
                 <picture>
-                  <source src="img/advocare/advocare_home@1x.png" media="(max-width:300px)">
+                  <source srcset="img/advocare/advocare_home@1x.png" media="(max-width:300px)">
                   <img src="img/advocare/advocare_home@2x.png" alt="design iterations for dashboard feature">
                 </picture>
               </div><!--IMG ENDS-->
@@ -197,42 +211,32 @@
               Visits that occurred in the past are now viewed by tapping the Visit History link, which helped trim down the excess of information on this page.</p>
               <div><!--IMG BEGINS-->
                 <picture>
-                  <source src="img/advocare/advocare_visits@1x.png" media="(max-width:300px)">
+                  <source srcset="img/advocare/advocare_visits@1x.png" media="(max-width:300px)">
                   <img src="img/advocare/advocare_visits@2x.png" alt="design iterations for care visits feature">
                 </picture>
             </div><!--IMG ENDS-->
           </div><!--DESIGN ITERATIONS ENDS-->
 
+          <!--FOOTER BEGINS-->
+          <footer id="contact">
+               <div> <!--open content wrapper-->
+                 <h2>Get in touch</h2>
+                 <p>Like my work and want to discuss opportunities? Let me know! <a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
+                 © Heather Fulton, 2022
+               </div> <!--close content wrapper-->
+               <div> <!--Socials-->
+                 <!--LinkedIn icon BEGINS-->
+                 <a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
+                   <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a>
+                   <!--LinkedIn icon ENDS-->
+                   <!--BEHANCE ICON BEGINS-->
+                   <a href="https://www.behance.net/heatherfulton" target="_blank">
+                    <img src="img/icons/Behance-icon.png" alt="Behance icon"></a>
+              </div><!--SOCIALS ENDS-->
 
+             </footer>
+          <!--FOOTER ENDS-->
+        </div>
+           </body>
 
-
-
-
-
-
-
-
-    <!--FOOTER BEGINS-->
-    <footer id="contact">
-         <div> <!--open content wrapper-->
-           <h2>Get in touch</h2>
-           <p>Like my work and want to discuss opportunities? Let me know! <a href="mailto:hfultondesign@gmail.com"> Send me an email. </a></p>
-           © Heather Fulton, 2022
-         </div> <!--close content wrapper-->
-         <div> <!--Socials-->
-           <!--LinkedIn icon BEGINS-->
-           <a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
-             <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="38px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="38px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg>
-             <!--LinkedIn icon ENDS-->
-             <!--BEHANCE ICON BEGINS-->
-             <a href="https://www.behance.net/heatherfulton" target="_blank">
-               <?xml version="1.0" ?><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"height="38px" id="Layer_1" width="38px"><path d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"/></svg>
-             <!--BEHANCE ICON ENDS-->
-        </div><!--SOCIALS ENDS-->
-
-       </footer>
-    <!--FOOTER ENDS-->
-
-     </body>
-
-   </html>
+          </html>
