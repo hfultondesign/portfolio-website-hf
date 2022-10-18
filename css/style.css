@@ -12,48 +12,58 @@ Purple (light): #a2aeeb;
 Turquoise (dark): #27cce1;
 Turquoise (light): #b1f6ff;
 */
-
-
+/*______________________________________TEXT STYLES_______________________________________________*/
 body {
 background-color: #f5f5f5;
 font-family: 'Karla', sans-serif;
 font-size: 16px;
 font-weight: 400;
-line-height:1.6;
+line-height:1.5;
 color: rgba(0,0,0,0.9);
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 h1 {
 font-family: 'Lora', serif;
-font-size: 3.125em;
-font weight:700;
-line-height: 1.4;
+font-size: 2.2em;
+font-weight: 700;
+line-height: 1.1;
 color: rgba(0,0,0,0.9);
 }
 
 h2 {
   font-family: 'Lora', serif;
-  font-size: 2.25em;
+  font-size: 1.7em;
   font-weight:600;
-  line-height: 1.4;
+  line-height: 1.1;
   color: rgba(0,0,0,0.9);
+  margin-top: 20px;
+  margin-bottom: 13px;
 }
 
 h3 {
   font-family: 'Asap', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.4em;
   font-weight: 600;
   font-style: italic;
-  line height: 1.4;
-  color: rgba(0,0,0,0.95)
+  line-height: 1.4;
+  color: rgba(0,0,0,0.95);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h4 {
   font-family: 'Asap', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
-  line height: 1.4;
-  color: rgba(0,0,0,0.85)
+  line-height: 1.4;
+  color: rgba(0,0,0,0.85);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h5 {
@@ -61,15 +71,15 @@ h5 {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
-  line height: 1.4;
+  line-height: 1.4;
   color: rgba(0,0,0,0.8)
 }
-
+/*______________________________________IMG_______________________________________________*/
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
+/*______________________________________LINK STYLES_______________________________________________*/
 a {
   color: #4d63d4;
   text-decoration: none; /* No underlining */
@@ -85,6 +95,7 @@ a:focus {
   text-decoration: underline;
 }
 
+/*______________________________________BUTTON STYLES_______________________________________________*/
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #4d63d4;
@@ -112,3 +123,310 @@ a:focus {
   background-color: #4d63d4;
   color: #ffffff;
 }
+
+
+/*______________________________________HEADER STYLES_______________________________________________*/
+header {
+  background-color: #2b2c2e;
+  position: fixed;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  text-align: center;
+  margin: 0 0px;
+}
+
+header {
+-webkit-box-shadow: 0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+-moz-box-shadow:    0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+box-shadow:         0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+}
+
+/*______________________________________MAIN CONTENT STYLES_______________________________________________*/
+main {
+  padding-top: 100px;
+}
+/*______________________________________LAYOUT STYLES_______________________________________________*/
+
+.container {
+  padding: 0 14px;
+}
+
+.row {
+  margin: 15px 0; /* 15 px top and bottom, 0 left and right*/
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+
+/*______________________________________HEAD NAVIGATION STYLES_______________________________________________*/
+.logo {
+  max-width: 250px;
+}
+
+nav > ul { /* removes bullets from list in topnav */
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul >li { /* puts nav links on one line */
+  display: inline-block;
+}
+
+nav > ul >li > a {
+  padding: 0 7px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff
+}
+
+nav > ul > li > a:hover {
+    color: #a2aeeb;
+    text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+    color: #4d63d4;
+    text-decoration: underline;
+}
+
+/* _______________________________________________HERO STYLES______________________________________________________ */
+#hero {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* _______________________________________________ABOUT ME STYLES______________________________________________________ */
+#aboutme {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* _______________________________________________MY EXPERIENCE STYLES______________________________________________________ */
+#myexperience {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* _______________________________________________MY VALUES STYLES______________________________________________________ */
+#becurious {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+#staycreative {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+#adapt {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+#skills {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 5px;
+  display: block;
+}
+
+#tools {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 25px;
+  display: block;
+}
+
+/*______________________________________FOOTER STYLES_______________________________________________*/
+#contact {
+  background-color: #fbfbfb;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 25px;
+  display: block;
+}
+#socials {
+  background-color: #fbfbfb;
+  padding-left: 14px;
+  padding-right:14px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+#socials > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#socials > ul > li {
+  display: inline-block;
+  margin: 0px;
+}
+
+#socials .row {
+  margin: 0px; /* 15 px top and bottom, 0 left and right*/
+}
+
+/* _______________________________________________ADVOCARE STYLES______________________________________________________ */
+  #proj-advocare {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #proj-advocare h1 {
+  padding-top: 15px;
+  margin: 0px;
+}
+
+  #advo-overview {
+    background-color: #ffbfb;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    display: inline-block;
+  }
+  #advo-problem {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 18px;
+    margin: 16px;
+    display: inline-block;
+  }
+
+#advo-problem h4 {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+#user-research {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#self-advocacy {
+  background-color: #ffffff;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin: 0px;
+  display: inline-block;
+}
+
+#advo-user-needs {
+  background-color: #ffffff;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#advo-user-sat {
+  background-color: #ffffff;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#advo-comp-analysis {
+  background-color: #ffbfb;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  display: inline-block;
+}
+
+  #advo-design-its {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #advo-treatments {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 18px;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  #advo-dash {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 18px;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  #advo-visits {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 18px;
+    margin: 0px;
+    display: inline-block;
+  }
+  /* ____________________________________________CARFAC ON STYLES______________________________________________________ */
+    #proj-carfac-on {
+      background-color: #f5f5f5;
+      padding: 20px 0;
+      display: inline-block;
+      width: 100%;
+    }

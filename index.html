@@ -23,12 +23,15 @@
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header>
-    <div id="topnav">
-     <a href="index.html"> <img src="img/hf-logo.svg" alt="Heather Fulton"></a>
+  <!-- HEADER NAVIGATION - BEGINS -->
+  <header id="topnav">
+    <div class="container">
+      <picture>
+        <source srcset="img/logotype-white@1x.png">
+        <img src="img/logotype-white@2x.png" alt="Heather Fulton">
+      </picture>
       <nav>
-        <ul>
+        <ul class="container">
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -36,27 +39,28 @@
       </nav>
     </div>
   </header>
+  <!--HEADER NAVIGATION ENDS-->
  <main> <!-- main content of the page-->
- <!--Hero section-->
-    <div>
-      <div>
-        <h2> Hi, I'm Heather.
-          <br>
-          </h2>
-          <h1>
+
+ <!--HERO SECTION BEGINS-->
+    <div id="hero">
+      <div class="container">
+        <h1> Hi, I'm Heather.
+          </h1>
+          <h2>
           <span>I design for human beings.</span>
-        </h1>
-        <h3>
+        </h2>
+        <p>
         I'm a Toronto-based user experience and graphic designer. I like solving problems and making things work better.
-        </h3>
-      </div>
+      </p>
     </div>
+  </div>
 
  <!--Work section-->
-    <div>
-      <div>
+    <div id="work">
+      <div class="container">
         <h2>Work</h2>
-        <div>
+        <div class="row">
          <!--ADVOCARE PROJECT-->
           <div> <!--open project box 1-->
             <picture>
@@ -84,7 +88,7 @@
             <h3>CARFAC Ontario website</h3>
             <p> <!--project description-->
             Employing a user-centred design process, I totally transformed a cluttered and disorienting website into an effective communication tool and a streamlined user experience.</p>
-            <a href="carfac.html">view project</a>
+            <a href="carfac-ontario.html" class="button">read more</a>
           </div> <!--close column 2-->
         </div> <!--close project box-->
       </div> <!--close content wrapper-->
@@ -93,23 +97,28 @@
 
     <!--FOOTER BEGINS-->
     <footer id="contact">
-         <div> <!--open content wrapper-->
+         <div class="container"> <!--open content wrapper-->
            <h2>Get in touch</h2>
-           <p>Like my work and want to discuss opportunities? Let me know! <a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
-           © Heather Fulton, 2022
+           <p>Like my work and want to discuss opportunities?</p>
+             <p><a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
          </div> <!--close content wrapper-->
-         <div> <!--Socials-->
+
+        <div class="row" id="socials"> <!--SOCIALS BEGIN-->
            <!--LinkedIn icon BEGINS-->
-           <a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
-             <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a>
+           <ul>
+             <li><a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
+             <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a></li>
              <!--LinkedIn icon ENDS-->
              <!--BEHANCE ICON BEGINS-->
-             <a href="https://www.behance.net/heatherfulton" target="_blank">
-              <img src="img/icons/Behance-icon.png" alt="Behance icon"></a>
-        </div><!--SOCIALS ENDS-->
-
+             <li><a href="https://www.behance.net/heatherfulton" target="_blank">
+              <img src="img/icons/Behance-icon.png" alt="Behance icon"></a></li>
+            </ul>
+        </div> <!--SOCIALS ENDS-->
+     <br>
+     © Heather Fulton, 2022
        </footer>
     <!--FOOTER ENDS-->
+
 
      </body>
 
