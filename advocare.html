@@ -24,42 +24,40 @@
 
 <!-- HEADER1 - NAME - ENDS -->
 
-  <!-- HEADER 2 - NAVIGATION - BEGINS -->
-  <header>
-    <div id="topnav">
-     <a href="index.html"> <img src="https://i.ibb.co/ccW9jsr/html-logo.png" alt="Heather Fulton"></a>
-      <nav>
-        <ul>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-    <!-- HEADER 2 - NAVIGATION - ENDS-->
+<!-- HEADER NAVIGATION - BEGINS -->
+<header id="topnav">
+  <div class="container">
+    <picture>
+      <source srcset="img/logotype-white@1x.png">
+      <img src="img/logotype-white@2x.png" alt="Heather Fulton">
+    </picture>
+    <nav>
+      <ul class="container">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--HEADER NAVIGATION ENDS-->
 
+<main>
 <!--MY WORK BEGINS-->
-  <div id="mywork">
     <div id="proj-advocare"><!--PROJECT TITLE BEGINS-->
+      <div class="container">
       <h1>Advocare</h1>
-    </div><!--PROJECT TITLE ENDS-->
+</div><!--PROJECT TITLE ENDS-->
+<div><!--IMG BEGINS-->
+  <picture>
+    <source srcset="img/advocare/advocare_logo@1x.png" media="(max-width: 20px)">
+      <img src="img/advocare/advocare_logo@2x.png" alt="Advocare logo">
+  </picture>
+</div><!--IMG ENDS-->
 
-    <div><!--PROJECT THUMBNAIL PIC BEGINS-->
-      <picture>
-        <source srcset="img/featured_advocare@1x.png" media="(max-width:600px)">
-          <img src="img/featured_advocare@2x.png" alt="Advocare mobile app" class="responsive">
-      </picture>
-    </div><!--PROJECT THUMBNAIL PIC ENDS-->
-
-    <div><!--OVERVIEW BEGINS-->
+    <div id="advo-overview"><!--OVERVIEW BEGINS-->
+      <div class="container">
       <h2>Overview</h2>
-      <div><!--IMG BEGINS-->
-        <picture>
-          <source srcset="img/advocare/advocare_splash@1x.png" media="(max-width: 200px)">
-            <img src="img/advocare/advocare_splash@2x.png" alt="Advocare splash screen">
-        </picture>
-      </div><!--IMG ENDS-->
       <p>Advocare is a mobile app designed for users who experience chronic health problems.
         Navigating the health care system and tracking illness progression can be exhausting, but is often necessary for users with chronic health conditions. For many who are already debilitated by their health problems, this can take a huge toll on their already limited energy; physically, mentally and emotionally.
         </p>
@@ -86,9 +84,11 @@
           <li>Adobe Illustrator</li>
           <li>Pencil & paper</li>
         </ul>
+      </div>
       </div><!--OVERVIEW ENDS-->
 
-      <div><!--DEFINING THE PROBLEM BEGINS-->
+      <div id="advo-problem"><!--DEFINING THE PROBLEM BEGINS-->
+        <div class="container">
         <h2>Defining the Problem</h2>
         <div><!--IMG BEGINS-->
           <picture>
@@ -112,13 +112,17 @@
             <h4>Visit Summary</h4>
             <p>A tool for users to record how their visit went. Users can confirm which of their visit goals were met, and record important notes from what was discussed. They can also use this tool to keep track of treatment changes made.
               </p>
+            </div>
         </div><!--DEFINING THE PROBLEM ENDS-->
 
-        <div><!--USER RESEARCH BEGINS-->
+
+        <div id="user-research"><!--USER RESEARCH BEGINS-->
+          <div class="container">
           <h2>User Research</h2>
             <h3>User Survey</h3>
             <p>111 users responded to a survey hosted on Google Forms. Participants were sourced from various online forums for people with chronic health issues.
             </p>
+            <div id="self-advocacy">
               <h4>Self Advocacy</h4>
               <ul>
                 <li>Systemic barriers and challenges navigating health care systems are widely reported</li>
@@ -137,8 +141,12 @@
                 <li>stress and trauma from repeated medical gaslighting</li>
                 <li>preventable illness progression</li>
                 </ul>
+              </div>
+
+              <div id="advo-user-needs">
               <h4>User Needs</h4>
-              <p>Users were asked: <b>Which of these tasks are relevant or necessary to managing your health condition?</b>
+              <p>Users were asked: <br>
+                <b>Which of these tasks are relevant or necessary to managing your health condition?</b>
                 <br>
                 <p>Results indicate the majority of users must interact regularly with health care providers (doctors, specialists, therapists, imaging technicians, etc)</p>
                 <div><!--IMG BEGINS-->
@@ -147,8 +155,12 @@
                       <img src="img/advocare/advocare_stat2@2x.png" alt="statistic 2">
                   </picture>
                 </div><!--IMG ENDS-->
+              </div>
+
+                <div id="advo-user-sat">
               <h4>User Satisfaction of Competitor Products</h4>
-              <p>Users were asked:<b>How helpful is/are the app(s) you've used in managing your chronic health condition?</b>
+              <p>Users were asked:<br>
+                <b>How helpful is/are the app(s) you've used in managing your chronic health condition?</b>
                 </p>
               <ul>
                 <li><b>50%</b> rated the helpfulness of these apps at <b>3/5 or below</b></li>
@@ -161,9 +173,13 @@
                     <img src="img/advocare/advocare_stat3@2x.png" alt="statistic 3">
                 </picture>
               </div><!--IMG ENDS-->
+            </div>
+          </div>
         </div><!--USER RESEARCH ENDS-->
 
-        <div><!--COMPETITOR ANALYSIS BEGINS-->
+<!--COMPETITOR ANALYSIS BEGINS-->
+        <div id="advo-comp-analysis">
+        <div class="container">
           <h2>Competitor Analysis</h2>
           <h3>AHRQ QuestionBuilder</h3>
             <div><!--IMG BEGINS-->
@@ -182,10 +198,16 @@
             </picture>
         </div><!--IMG ENDS-->
           <p>Aligns themselves as a medical app, and use a comprehensive symptom tracker feature as a marketing focal point. Since its’ inception in 2014 and has had a lot of time to fine tune their design. FlareDown was developed using crowd-sourced funding.</p>
+        </div>
         </div><!--COMPETITOR ANALYSIS ENDS-->
 
-        <div><!--DESIGN ITERATIONS BEGINS-->
+
+        <!--DESIGN ITERATIONS BEGINS-->
+        <div id="advo-design-its">
+          <div class="container">
           <h2>Design Iterations</h2>
+
+          <div id="advo-treatments">
             <h3>Treatments</h3>
             <p>Originally, I had designed a treatment tracking feature. After streamlining the design, and focusing on fewer features, I still wanted users to be able to access information about their treatments.
             </p>
@@ -195,6 +217,9 @@
                 <img src="img/advocare/advocare_treatment@2x.png" alt="design iterations for treatment feature">
               </picture>
           </div><!--IMG ENDS-->
+        </div>
+
+        <div id="advo-dash">
             <h3>Dashboard</h3>
             <p>Early iterations included pages called Feedboards, which served as a Dashboard for a specific health condition the user is tracking. Users would have one per condition they track.  
               As I streamlined my design, I realized this created a navigation experience that was convoluted.
@@ -205,6 +230,9 @@
                   <img src="img/advocare/advocare_home@2x.png" alt="design iterations for dashboard feature">
                 </picture>
               </div><!--IMG ENDS-->
+            </div>
+
+            <div id="advo-visits">
             <h3>Care Visits</h3>
             <p>Early iterations had one section of the app called Care. This section featured three sub sections: Care Visits, Care Team, and Care Clinics.
               I later re-organized my information architecture in order to streamline the UX. All information pertaining to Care Clinics is found on Care Provider profile pages. The Care Team subsection is now a child of the more generalized Visits parent section.  
@@ -215,27 +243,32 @@
                   <img src="img/advocare/advocare_visits@2x.png" alt="design iterations for care visits feature">
                 </picture>
             </div><!--IMG ENDS-->
+          </div>
           </div><!--DESIGN ITERATIONS ENDS-->
-
+</main>
           <!--FOOTER BEGINS-->
           <footer id="contact">
-               <div> <!--open content wrapper-->
+               <div class="container"> <!--open content wrapper-->
                  <h2>Get in touch</h2>
-                 <p>Like my work and want to discuss opportunities? Let me know! <a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
-                 © Heather Fulton, 2022
+                 <p>Like my work and want to discuss opportunities?</p>
+                   <p><a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
                </div> <!--close content wrapper-->
-               <div> <!--Socials-->
+
+              <div class="row" id="socials"> <!--SOCIALS BEGIN-->
                  <!--LinkedIn icon BEGINS-->
-                 <a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
-                   <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a>
+                 <ul>
+                   <li><a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
+                   <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a></li>
                    <!--LinkedIn icon ENDS-->
                    <!--BEHANCE ICON BEGINS-->
-                   <a href="https://www.behance.net/heatherfulton" target="_blank">
-                    <img src="img/icons/Behance-icon.png" alt="Behance icon"></a>
+                   <li><a href="https://www.behance.net/heatherfulton" target="_blank">
+                    <img src="img/icons/Behance-icon.png" alt="Behance icon"></a></li>
               </div><!--SOCIALS ENDS-->
-
+           <br>
+           © Heather Fulton, 2022
              </footer>
           <!--FOOTER ENDS-->
+
         </div>
            </body>
 
