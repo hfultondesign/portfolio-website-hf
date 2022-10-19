@@ -2,6 +2,19 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!--NORMALIZE CSS LINK-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS STYLESHEET LINK-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--GOOGLE WEB FONT EMBED BEGINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--GOOGLE WEB FONT EMBED ENDS-->
+
+    <!--VIEWPORT--> <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta charset="utf-8">
   <meta name="author" content="Heather Fulton">
     <meta name="description" content="Heather Fulton, UX Design, Graphic Design, UI Design, UX Research, UXR, designer, portfolio, remote, Toronto">
@@ -10,51 +23,56 @@
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header>
-    <div>
-     <a href="index.html"> <img src="img/hf-logo.svg" alt="Heather Fulton">
+  <!-- HEADER NAVIGATION - BEGINS -->
+  <header id="topnav">
+    <div class="container">
+      <picture>
+        <source srcset="img/logotype-white@1x.png">
+        <img src="img/logotype-white@2x.png" alt="Heather Fulton">
+      </picture>
       <nav>
-        <ul>
-        <li><a href="work.html">Work</a></li>
+        <ul class="container">
+        <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
+  <!--HEADER NAVIGATION ENDS-->
  <main> <!-- main content of the page-->
- <!--Hero section-->
-    <div>
-      <div>
-        <h2> Hi, I'm Heather.
-          <br>
-          </h2>
-          <h1>
+
+ <!--HERO SECTION BEGINS-->
+    <div id="hero">
+      <div class="container">
+        <h1> Hi, I'm Heather.
+          </h1>
+          <h2>
           <span>I design for human beings.</span>
-        </h1>
-        <h3>
-        <p>I'm a Toronto-based user experience and graphic designer. I like solving problems and making things work better.</p>
-        </h3>
-      </div>
+        </h2>
+        <p>
+        I'm a Toronto-based user experience and graphic designer. I like solving problems and making things work better.
+      </p>
     </div>
+  </div>
 
  <!--Work section-->
-    <div>
-      <div>
+    <div id="work">
+      <div class="container">
         <h2>Work</h2>
-        <div>
+        <div class="row">
          <!--ADVOCARE PROJECT-->
           <div> <!--open project box 1-->
             <picture>
-              <source src="img\Featured_Advocare@1x.png" media="(max-width:767px)">
-              <img src="img\Featured_Advocare@2x.png" alt="Advocare Thumbnail">
+              <source srcset="img/Featured_Advocare@1x.png" media="(max-width:767px)">
+              <img src="img/Featured_Advocare@2x.png" alt="Advocare Thumbnail">
             </picture>
           </div>
           <div>
             <h3>Advocare - mobile health app</h3>
             <p> <!--project description-->
             I designed a mobile app that supports users with chronic health conditions in advocating for themselves and improving communication with their care team.</p>
-            <a href="advocare.html">view project</a>
+            <a href="advocare.html" class="button">read more</a>
           </div> <!--close column 2-->
         </div> <!--close project box-->
 
@@ -62,15 +80,15 @@
          <div> <!--open project box 2-->
             <div> <!--open column 1-->
             <picture>
-              <source src="img\Featured_CARFAC@1x.png" media="(max-width:767px)">
-              <img src="img\Featured_CARFAC@2x.png" alt="CARFAC Thumbnail">
+              <source srcset="img/Featured_CARFAC@1x.png" media="(max-width:767px)">
+              <img src="img/Featured_CARFAC@2x.png" alt="CARFAC Thumbnail">
             </picture>
           </div>
           <div>
             <h3>CARFAC Ontario website</h3>
             <p> <!--project description-->
             Employing a user-centred design process, I totally transformed a cluttered and disorienting website into an effective communication tool and a streamlined user experience.</p>
-            <a href="carfac.html">view project</a>
+            <a href="carfac-ontario.html" class="button">read more</a>
           </div> <!--close column 2-->
         </div> <!--close project box-->
       </div> <!--close content wrapper-->
@@ -79,24 +97,28 @@
 
     <!--FOOTER BEGINS-->
     <footer id="contact">
-         <div> <!--open content wrapper-->
+         <div class="container"> <!--open content wrapper-->
            <h2>Get in touch</h2>
-           <p>Like my work and want to discuss opportunities? Let me know! <a href="mailto:hfultondesign@gmail.com"> Send me an email. </a></p>
-           © Heather Fulton, 2022
+           <p>Like my work and want to discuss opportunities?</p>
+             <p><a href="mailto:hfultondesign@gmail.com" class="button contact"> Send me an email. </a></p>
          </div> <!--close content wrapper-->
-         <div> <!--Socials-->
+
+        <div class="row" id="socials"> <!--SOCIALS BEGIN-->
            <!--LinkedIn icon BEGINS-->
-           <a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
-             <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="38px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="38px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg>
+           <ul>
+             <li><a href="https://www.linkedin.com/in/h-fulton/" target="_blank">
+             <img src="img/icons/linkedin-icon.png" alt="LinkedIn icon"></a></li>
              <!--LinkedIn icon ENDS-->
              <!--BEHANCE ICON BEGINS-->
-             <a href="https://www.behance.net/heatherfulton" target="_blank">
-               <?xml version="1.0" ?><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"height="38px" id="Layer_1" width="38px"><path d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"/></svg>
-             <!--BEHANCE ICON ENDS-->
-        </div><!--SOCIALS ENDS-->
-
+             <li><a href="https://www.behance.net/heatherfulton" target="_blank">
+              <img src="img/icons/Behance-icon.png" alt="Behance icon"></a></li>
+            </ul>
+        </div> <!--SOCIALS ENDS-->
+     <br>
+     © Heather Fulton, 2022
        </footer>
     <!--FOOTER ENDS-->
+
 
      </body>
 
