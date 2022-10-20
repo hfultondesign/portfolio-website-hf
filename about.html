@@ -24,12 +24,19 @@
 
 <body>
   <!-- HEADER NAVIGATION - BEGINS -->
-  <header id="topnav">
-    <div class="container">
-      <picture>
-        <source srcset="img/logotype-white@1x.png">
-        <img src="img/logotype-white@2x.png" alt="Heather Fulton">
-      </picture>
+<header>
+  <div id="top">
+      <!--Logo-->
+    <div class="logo-col">
+      <div class="logo">
+        <a href="index.html">
+      <img src="img/logotype-white@160px.png"
+        alt="Heather Fulton"
+        class="logo">
+      </a>
+    </div>
+
+
       <nav>
         <ul class="container">
         <li><a href="index.html">Work</a></li>
@@ -38,23 +45,25 @@
         </ul>
       </nav>
     </div>
+    </div>
   </header>
   <!--HEADER NAVIGATION ENDS-->
-
 <main>
   <div id="aboutme"> <!--TOP CONTENT BEGINS-->
     <div class="container"> <!--OPENING BEGINS-->
         <h1>about me</h1>
     </div> <!--OPENING ENDS-->
-  </div> <!--TOP CONTENT ENDS-->
+
+
   <div class="container"> <!--BOTTOM CONTENT BEGINS-->
 
-  <picture><!--PROFILE IMAGE-->
-      <source srcset="img/profile-image@1x.png">
+  <!--PROFILE IMAGE-->
+  <div id="profilepic">
       <img src="img/profile-image@1x.png" alt="Heather Fulton">
-  </picture><!-- Project-image-end-->
+    </div>
+<!-- Project-image-end-->
 
-  <div> <!--DETAILS  BEGIN-->
+
     <div id="myexperience"> <!--MY EXPERIENCE BEGINS-->
       <h2>my experience</h2>
       <p>My design career began over ten years ago with graphic design. After earning a Bachelor of Design from the Ontario College of Art & Design University, I worked closely with a wide array of clients (clothing designers, musicians, art galleries to name a few).
@@ -79,11 +88,13 @@
         <p>Being resourceful with restrictive budgets and timelines, dealing with unforeseeable challenges, and working through barriers are all skills I've developed through great experience working as a graphic designer and working within the nonprofit sector. I'm able to approach projects with a plan in mind that is built to be able to pivot as needed.</P>
         </div>
       </div><!--MY VALUES ENDS!-->
+  <h2>skills & tools</h2>
+  <div id="skillsandtools"> <!--SKILLS AND TOOLS BEGINS-->
 
-      <div><!--SKILLS AND TOOLS COLUMN BEGINS-->
-<br>
-      <h2>skills & tools</h2>
-        <div id="skills"> <!--SKILLS LIST BEGINS-->
+
+      <div id="skills" class="row"> <!--BEGIN SKILLS ROW-->
+        <div class="col-md-6"> <!--BEGIN SKILLS COLUMN-->
+
           <h3>Skills</h3>
           <ul>
             <li>User research</li>
@@ -99,8 +110,10 @@
             <li>Brand & identity design</li>
             <li>Basic front end dev</li>
           </ul>
-        </div><!--SKILLS LIST ENDS-->
-        <div id="tools"><!--TOOLS LIST BEGINS-->
+        </div> <!--END SKILLS COLUMN-->
+
+
+<div id="tools" class="col-md-6"> <!--BEGIN TOOLS COLUMN-->
           <h3>Tools</h3>
           <ul>
             <li>Figma</li>
@@ -111,19 +124,14 @@
             <li>Excel/Sheets</li>
             <li>Atom</li>
           </ul>
-      </div><!--TOOLS LIST ENDS-->
-    </div><!--SKILLS AND TOOLS COLUMN ENDS-->
-  </div><!--DETAILS ENDS-->
-</div><!--BOTTOM CONTENT ENDS-->
-</main> <!--MAIN CONTENT ENDS-->
+        </div> <!--END TOOLS COLUMN -->
+    </div> <!--END TOOLS ROW-->
+    </div> <!--END SKILLS ROW-->
 
+</div> <!--END SKILLS & TOOLS SECTION-->
 
-
-
-
-
-
-
+</div> <!--CONTAINER ENDS-->
+</div> <!--ABOUT ME ENDS-->
 
 
 
@@ -145,12 +153,12 @@
          <li><a href="https://www.behance.net/heatherfulton" target="_blank">
           <img src="img/icons/Behance-icon.png" alt="Behance icon"></a></li>
         </ul>
-    </div><!--SOCIALS ENDS-->
+    </div> <!--SOCIALS ENDS-->
  <br>
  © Heather Fulton, 2022
    </footer>
 <!--FOOTER ENDS-->
-
+</main> <!--MAIN CONTENT ENDS-->
  </body>
 
 </html>

@@ -12,6 +12,11 @@ Purple (light): #a2aeeb;
 Turquoise (dark): #27cce1;
 Turquoise (light): #b1f6ff;
 */
+
+* {
+  box-sizing: border-box;
+}
+
 /*______________________________________TEXT STYLES_______________________________________________*/
 body {
 background-color: #f5f5f5;
@@ -20,11 +25,6 @@ font-size: 16px;
 font-weight: 400;
 line-height:1.5;
 color: rgba(0,0,0,0.9);
-}
-
-p {
-  margin-top: 5px;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -41,8 +41,7 @@ h2 {
   font-weight:600;
   line-height: 1.1;
   color: rgba(0,0,0,0.9);
-  margin-top: 20px;
-  margin-bottom: 13px;
+
 }
 
 h3 {
@@ -127,14 +126,15 @@ a:focus {
 
 /*______________________________________HEADER STYLES_______________________________________________*/
 header {
-  background-color: #2b2c2e;
+  background-color: #151515;
   position: fixed;
-  padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 2px;
   text-align: center;
   margin: 0 0px;
+  width: 100%;
 }
 
 header {
@@ -143,6 +143,24 @@ header {
 box-shadow:         0px 5px 3px -1px rgba(49, 50, 50, 0.19);
 }
 
+
+/*---ADDED 10:50AM OCT 20 ----*/
+
+
+
+header .logo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 7px;
+  padding-bottom: 5px;
+  width: 65%;
+}
+
+
+
+
 /*______________________________________MAIN CONTENT STYLES_______________________________________________*/
 main {
   padding-top: 100px;
@@ -150,22 +168,25 @@ main {
 /*______________________________________LAYOUT STYLES_______________________________________________*/
 
 .container {
-  padding: 0 14px;
+  padding: 0 15px;
 }
 
 .row {
-  margin: 15px 0; /* 15 px top and bottom, 0 left and right*/
+  margin: 25px 0; /* 15 px top and bottom, 0 left and right*/
 }
 
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+
+}
+
+#work h2 {
+  text-align: center;
 }
 
 
 /*______________________________________HEAD NAVIGATION STYLES_______________________________________________*/
-.logo {
-  max-width: 250px;
-}
+
 
 nav > ul { /* removes bullets from list in topnav */
   list-style-type: none;
@@ -174,13 +195,14 @@ nav > ul { /* removes bullets from list in topnav */
 
 nav > ul >li { /* puts nav links on one line */
   display: inline-block;
+  margin: auto;
 }
 
 nav > ul >li > a {
   padding: 0 7px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #ffffff
+  color: #ededed
 }
 
 nav > ul > li > a:hover {
@@ -195,12 +217,25 @@ nav > ul > li > a:active {
 
 /* _______________________________________________HERO STYLES______________________________________________________ */
 #hero {
-  background-color: #f5f5f5;
-  padding: 20px 0;
-  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
   width: 100%;
 }
 
+#hero h1 {
+  text-align: center;
+}
+
+#hero h2 {
+  text-align: center;
+  line-height: 1.3em;
+}
+
+#hero span {
+  display: block;
+}
 /* _______________________________________________ABOUT ME STYLES______________________________________________________ */
 #aboutme {
   background-color: #f5f5f5;
@@ -255,8 +290,7 @@ nav > ul > li > a:active {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
-  padding-top: 18px;
-  margin-top: 5px;
+  padding-top: 12px;
   display: block;
 }
 
@@ -265,8 +299,7 @@ nav > ul > li > a:active {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 10px;
-  padding-top: 18px;
-  margin-top: 25px;
+  padding-top: 12px;
   display: block;
 }
 
@@ -325,6 +358,12 @@ nav > ul > li > a:active {
     padding-top: 0px;
     display: inline-block;
   }
+
+#advo-role {
+  margin-left: auto;
+  margin-right: auto;
+}
+
   #advo-problem {
     background-color: #ffffff;
     padding-left: 20px;
@@ -379,7 +418,7 @@ nav > ul > li > a:active {
 }
 
 #advo-comp-analysis {
-  background-color: #ffbfb;
+  background-color: #f5f5f5;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -430,3 +469,254 @@ nav > ul > li > a:active {
       display: inline-block;
       width: 100%;
     }
+  /* ____________________________________________ANIMATION_____________________________________________________ */
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+  /* ____________________________________________MEDIA QUERIES______________________________________________________ */
+
+/*clear page flow*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*float all columns left*/
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  /*===============================
+  Medium devices (640px or larger)
+  ===============================*/
+
+    @media only screen and (min-width: 640px) {
+      body {
+        font-size: 18px;
+      }
+
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+
+      nav {
+        width: auto;
+        float: right;
+        padding-right: 20px;
+      }
+
+main {
+  padding: 14px;
+}
+.col-md-3 {
+  width: 25%;
+  float: left;
+}
+
+  .col-md-4 {
+  width: 33.33%;
+  float: left;
+    }
+
+      .col-md-5 {
+        width: 25%;
+        float: left;
+      }
+
+      .col-md-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 40px;
+      }
+
+      .col-md-8 {
+        width: 66.66%;
+        float: left;
+      }
+
+      .col-md-9 {
+        width: 75%;
+        float: left;
+      }
+
+    header .logo {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      width: 50%;
+    }
+
+    #aboutme {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    #profilepic {
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+#proj-advocare {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+  /*===============================
+  Large devices (1024px or larger)
+  ===============================*/
+  @media only screen and (min-width: 1024px) {
+
+    body {
+      font-size: 18px;
+    }
+
+    header {
+      text-align: unset;
+      padding: 15px 0 px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      padding-right: 20px;
+    }
+
+    header .logo {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      width: 40%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+      float: left;
+      padding-bottom: 40px;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+      float: left;
+      padding-bottom: 40px;
+    }
+
+    .col-lg-4 {
+      width: 33.33%;
+      float: left;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+      float: left;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #profilepic {
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    #advo-logo {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #advo-role {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    #advo-time {
+      padding-left: 50px;
+      padding-right: 12px;
+    }
+
+    #advo-illus1 {
+      max-width: 40%;
+      margin-right: 50px;
+    }
+  }
+
+  /*================================
+  X-large devices (1440px or larger)
+  ================================*/
+  @media only screen and (min-width: 1440px) {
+    body {
+      font-size: 21px;
+    }
+
+    header {
+      text-align: unset;
+      padding: 40px 20 40px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      padding-right: 20px;
+    }
+
+    header .logo {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-top: 12px;
+      padding-bottom: 5px;
+      width: 40%;
+    }
+  }
