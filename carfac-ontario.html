@@ -7,11 +7,13 @@
       <!--CSS STYLESHEET LINK-->
       <link rel="stylesheet" type="text/css" href="css/style.css">
 
-      <!--GOOGLE WEB FONT EMBED BEGINS-->
+      <!--GOOGLE WEB FONT EMBED-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      <!--GOOGLE WEB FONT EMBED ENDS-->
+
+      <!--FONTAWESOME KIT CODE-->
+      <script src="https://kit.fontawesome.com/f2a670cb99.js" crossorigin="anonymous"></script>
 
       <!--VIEWPORT--> <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,28 +21,36 @@
     <meta name="author" content="Heather Fulton">
       <meta name="description" content="Heather Fulton, UX Design, Graphic Design, UI Design, UX Research, UXR, designer, portfolio, remote, Toronto">
 
-    <title>Heather Fulton - Design Portfolio - CARFAC Ontario</title>
+    <title>Heather Fulton - Design Portfolio</title>
   </head>
 
-<!-- HEADER1 - NAME - ENDS -->
+  <body>
+    <!-- HEADER NAVIGATION - BEGINS -->
+  <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+        <!--Logo-->
+      <a href="index.html">
+        <img class="logo" src="img/logotype-grey@1x.svg" alt="Heather Fulton UX logo">
+        </a>
 
-<!-- HEADER NAVIGATION - BEGINS -->
-<header id="topnav">
-  <div class="container">
-    <picture>
-      <source srcset="img/logotype-white@1x.png">
-      <img src="img/logotype-white@2x.png" alt="Heather Fulton" style="max-width:60%;">
-    </picture>
-    <nav>
-      <ul class="container">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<!--HEADER NAVIGATION ENDS-->
+        <nav>
+          <ul class="container">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+            <span style="font-size: 1.4em; color: #ffffff;">
+              <i class="fa-solid fa-bars"></i>
+                </a></li>
+          </ul>
+        </nav>
+        </div>
+        </div>
+
+    </header>
+    <!--HEADER NAVIGATION ENDS-->
+
 <main>
 <!--MY WORK BEGINS-->
   <div id="proj-carfac-on">
