@@ -132,7 +132,6 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 2px;
-  text-align: center;
   margin: 0 0px;
   width: 100%;
 }
@@ -143,27 +142,18 @@ header {
 box-shadow:         0px 5px 3px -1px rgba(49, 50, 50, 0.19);
 }
 
-
-/*---ADDED 10:50AM OCT 20 ----*/
-
-
-
 header .logo {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-
   padding-top: 7px;
   padding-bottom: 5px;
-  width: 65%;
+  max-width: 150px;
 }
-
-
-
 
 /*______________________________________MAIN CONTENT STYLES_______________________________________________*/
 main {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 /*______________________________________LAYOUT STYLES_______________________________________________*/
 
@@ -187,19 +177,44 @@ main {
 
 /*______________________________________HEAD NAVIGATION STYLES_______________________________________________*/
 
+/* hides nav menu items*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+/* ----positions menu icon to the right of the header -----*/
+.navtoggle .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  font-size: 20px;
+}
+
+/*----JS: opens mobile menu----*/
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #333335;
+}
+
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/*-------------------------------------------------------*/
 
 nav > ul { /* removes bullets from list in topnav */
   list-style-type: none;
-  padding: 0;
-}
-
-nav > ul >li { /* puts nav links on one line */
-  display: inline-block;
-  margin: auto;
+  padding: 0px;
 }
 
 nav > ul >li > a {
-  padding: 0 7px;
+  padding: 0 11px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ededed
@@ -218,7 +233,8 @@ nav > ul > li > a:active {
 /* _______________________________________________HERO STYLES______________________________________________________ */
 #hero {
   background-color: #e0e0e0;
-  padding: 30px 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
   text-align: center;
   display: block;
   width: 100%;
@@ -226,11 +242,13 @@ nav > ul > li > a:active {
 
 #hero h1 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #hero h2 {
   text-align: center;
   line-height: 1.3em;
+  margin-top: 0px;
 }
 
 #hero span {
@@ -526,13 +544,14 @@ nav > ul > li > a:active {
   ===============================*/
 
     @media only screen and (min-width: 640px) {
+
       body {
         font-size: 18px;
       }
 
       header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 20px 0 20px;
       }
 
       nav {
@@ -580,9 +599,9 @@ main {
       margin-left: auto;
       margin-right: auto;
       padding-left: 15px;
-      padding-top: 10px;
+      padding-top: 13px;
       padding-bottom: 5px;
-      width: 50%;
+      max-width: 40%;
     }
 
     #aboutme {
@@ -599,6 +618,30 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+#hero {
+  padding-top: 120px;
+}
+
+
+/*------ MOBILE MENU TOGGLE---------/*
+
+
+/* puts nav links on one line */
+nav > ul >li {
+  margin: 0;
+}
+
+/* nav items hidden only on mobile */
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+/* hides hamburger menu icon on devices larger than mobile */
+.navtoggle li:last-child {
+display: none;
+}
+
 
 }
   /*===============================
@@ -626,9 +669,9 @@ main {
       margin-left: auto;
       margin-right: auto;
       padding-left: 15px;
-      padding-top: 10px;
+      padding-top: 18px;
       padding-bottom: 5px;
-      width: 40%;
+      width: 20%;
     }
 
     .col-lg-7 {
@@ -715,8 +758,8 @@ main {
       margin-left: auto;
       margin-right: auto;
       padding-left: 20px;
-      padding-top: 12px;
+      padding-top: 20px;
       padding-bottom: 5px;
-      width: 40%;
+      width: 20%;
     }
   }
