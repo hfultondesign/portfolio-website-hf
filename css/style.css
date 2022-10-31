@@ -156,11 +156,12 @@ header .logo {
 /*______________________________________LAYOUT STYLES_______________________________________________*/
 
 .container {
-  padding: 0 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .row {
-  margin: 25px 0; /* 15 px top and bottom, 0 left and right*/
+  margin: 15px 0; /* 15 px top and bottom, 0 left and right*/
 }
 
 #work .row {
@@ -172,11 +173,17 @@ header .logo {
   text-align: center;
 }
 main {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 #hero {
   padding-top: 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*______________________________________HEAD NAVIGATION STYLES_______________________________________________*/
@@ -237,7 +244,7 @@ nav > ul > li > a:active {
 /* _______________________________________________HERO STYLES______________________________________________________ */
 #hero {
   background-color: #e0e0e0;
-  padding-top: 20px;
+  padding-top: 85px;
   padding-bottom: 20px;
   text-align: center;
   display: block;
@@ -262,6 +269,7 @@ nav > ul > li > a:active {
 #aboutme {
   background-color: #f5f5f5;
   padding: 20px 0;
+  margin-top: 60px;
   display: inline-block;
   width: 100%;
 }
@@ -337,8 +345,6 @@ nav > ul > li > a:active {
 }
 #socials {
   background-color: #fbfbfb;
-  padding-left: 14px;
-  padding-right:14px;
   padding-bottom: 10px;
   padding-top: 0px;
   margin-top: 0px;
@@ -362,18 +368,66 @@ nav > ul > li > a:active {
 /* _______________________________________________ADVOCARE STYLES______________________________________________________ */
   #proj-advocare {
     background-color: #f5f5f5;
-    padding: 20px 0;
     display: inline-block;
     width: 100%;
+    margin-top: 50px;
   }
 
   #proj-advocare h1 {
   padding-top: 15px;
-  margin: 0px;
+}
+
+#advo-box {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+#advo-box2 {
+  background-color: #ffffff;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+#advo-box3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+#advo-box-userneeds {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+#advo-box-usersat {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+#advo-box-designs #advo-box-designs2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
 }
 
   #advo-overview {
-    background-color: #ffbfb;
+    background-color: #fbfbfb;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -386,21 +440,16 @@ nav > ul > li > a:active {
   margin-right: auto;
 }
 
+#advo-time {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 00px;
+}
+
   #advo-problem {
     background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 18px;
-    margin: 16px;
     display: inline-block;
   }
-
-#advo-problem h4 {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  margin: 0px;
-}
 
 #user-research {
   background-color: #f5f5f5;
@@ -450,7 +499,6 @@ nav > ul > li > a:active {
 
   #advo-design-its {
     background-color: #f5f5f5;
-    padding: 20px 0;
     display: inline-block;
     width: 100%;
   }
@@ -484,6 +532,8 @@ nav > ul > li > a:active {
     margin: 0px;
     display: inline-block;
   }
+
+
   /* ____________________________________________CARFAC ON STYLES______________________________________________________ */
     #proj-carfac-on {
       background-color: #f5f5f5;
@@ -550,12 +600,16 @@ nav > ul > li > a:active {
     @media only screen and (min-width: 640px) {
 
       body {
-        font-size: 18px;
+        font-size: 17px;
       }
 
       header {
         text-align: unset;
         padding: 20px 0 20px;
+      }
+
+      main {
+        padding-top: 10px;
       }
 
       nav {
@@ -564,6 +618,11 @@ nav > ul > li > a:active {
         padding-right: 20px;
       }
 
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .col-md-3 {
   width: 25%;
@@ -601,14 +660,15 @@ nav > ul > li > a:active {
       margin-left: auto;
       margin-right: auto;
       padding-left: 15px;
-      padding-top: 13px;
+      padding-top: 20px;
       padding-bottom: 5px;
-      max-width: 40%;
+      max-width: 22%;
     }
 
     #aboutme {
       padding-left: 20px;
       padding-right: 20px;
+      margin-top: 90px;
     }
 
     #profilepic {
@@ -619,12 +679,39 @@ nav > ul > li > a:active {
 #proj-advocare {
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 90px;
 }
 
 #hero {
   padding-top: 120px;
 }
 
+#advo-box {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#advo-box3 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#advo-box-userneeds {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#advo-box-designs #advo-box-designs2 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+#advo-illus1 {
+  max-width: 35%;
+  margin: auto;
+  padding-right: 40px;
+}
 
 /*------ MOBILE MENU TOGGLE---------/*
 
@@ -652,20 +739,26 @@ display: none;
   @media only screen and (min-width: 1024px) {
 
     body {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     main {
-      padding-top: 100px;
+      padding-top: 10px;
     }
 
     #hero {
-      padding-top: 10px;
+      padding-top: 110px;
+    }
+
+    #aboutme {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 80px;
     }
 
     header {
       text-align: unset;
-      padding: 15px 0 px;
+      padding: 15px 0;
     }
 
     nav {
@@ -681,13 +774,13 @@ display: none;
       padding-left: 15px;
       padding-top: 18px;
       padding-bottom: 5px;
-      width: 20%;
+      width: 30%;
     }
 
     .col-lg-7 {
       width: 58.33%;
       float: left;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
     }
 
     .col-lg-5 {
@@ -707,7 +800,7 @@ display: none;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 850px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -734,9 +827,62 @@ display: none;
     }
 
     #advo-illus1 {
-      max-width: 40%;
-      margin-right: 50px;
+      max-width: 35%;
+      margin: auto;
+      padding-right: 20px;
     }
+    #img-treatments {
+      max-width: 70%;
+    }
+
+    #img-dashboard {
+      max-width: 70%;
+    }
+
+    #img-visits {
+      max-width: 70%;
+    }
+
+#advo-box {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  #advo-box3 {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 35px;
+      padding-bottom: 20px;
+      background-color: #ffffff;
+    }
+
+    #advo-box-userneeds {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        background-color: #ffffff;
+      }
+
+      #advo-box-usersat {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-top: 35px;
+          padding-bottom: 20px;
+          background-color: #ffffff;
+        }
+
+        #advo-box-designs #advo-box-designs2 {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 35px;
+            padding-bottom: 20px;
+            background-color: #ffffff;
+          }
+
   }
 
   /*================================
@@ -749,7 +895,7 @@ display: none;
 
     header {
       text-align: unset;
-      padding: 40px 20 40px;
+      padding: 40px 20px 40px;
     }
 
     nav {
@@ -765,7 +911,7 @@ display: none;
       padding-left: 20px;
       padding-top: 20px;
       padding-bottom: 5px;
-      width: 20%;
+      width: 16%;
     }
 
     .col-xl-3 {
@@ -806,5 +952,15 @@ display: none;
       #advo-illus1 {
         max-width: 30%;
         margin-right: 50px;
+      }
+
+      #hero {
+        padding-top: 170px;
+      }
+
+      #aboutme {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 120px;
       }
       }
