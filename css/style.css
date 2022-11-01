@@ -722,6 +722,7 @@ nav>ul>li>a:active {
   #advo-box-designs #advo-box-designs2 {
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #ffffff;
   }
 
   #advo-illus1 {
@@ -892,7 +893,15 @@ nav>ul>li>a:active {
     background-color: #ffffff;
   }
 
-  #advo-box-designs #advo-box-designs2 {
+  #advo-box-designs {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  #advo-box-designs2 {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 35px;
@@ -978,5 +987,21 @@ nav>ul>li>a:active {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 120px;
+  }
+
+  #advo-box-designs {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  #advo-box-designs2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
   }
 }
