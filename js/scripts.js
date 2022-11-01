@@ -1,4 +1,4 @@
-console.log("Hi, welcome to my portfolio!")
+console.log("Hi, welcome to my portfolio!");
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
@@ -7,14 +7,6 @@ if (x.className === 'navtoggle') {
   } else {
     x.className = 'navtoggle';
       }
-}
-function menuToggle(x) {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-  }
 }
 
 $('#click_advance').click(function() {

@@ -12,36 +12,34 @@ Purple (light): #a2aeeb;
 Turquoise (dark): #27cce1;
 Turquoise (light): #b1f6ff;
 */
-
 * {
   box-sizing: border-box;
 }
 
 /*______________________________________TEXT STYLES_______________________________________________*/
 body {
-background-color: #f5f5f5;
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height:1.5;
-color: rgba(0,0,0,0.9);
+  background-color: #f5f5f5;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 h1 {
-font-family: 'Lora', serif;
-font-size: 2.2em;
-font-weight: 700;
-line-height: 1.1;
-color: rgba(0,0,0,0.9);
+  font-family: 'Lora', serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.1;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 h2 {
   font-family: 'Lora', serif;
   font-size: 1.7em;
-  font-weight:600;
+  font-weight: 600;
   line-height: 1.1;
-  color: rgba(0,0,0,0.9);
-
+  color: rgba(0, 0, 0, 0.9);
 }
 
 h3 {
@@ -50,7 +48,7 @@ h3 {
   font-weight: 600;
   font-style: italic;
   line-height: 1.4;
-  color: rgba(0,0,0,0.95);
+  color: rgba(0, 0, 0, 0.95);
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -60,7 +58,7 @@ h4 {
   font-size: 1.2em;
   font-weight: 600;
   line-height: 1.4;
-  color: rgba(0,0,0,0.85);
+  color: rgba(0, 0, 0, 0.85);
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -71,8 +69,9 @@ h5 {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.4;
-  color: rgba(0,0,0,0.8)
+  color: rgba(0, 0, 0, 0.8)
 }
+
 /*______________________________________IMG_______________________________________________*/
 img {
   width: 100%;
@@ -81,14 +80,17 @@ img {
 /*______________________________________LINK STYLES_______________________________________________*/
 a {
   color: #4d63d4;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #a2aeeb;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:hover,
+a:hover {
+  color: #a2aeeb;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+
 a:focus {
   color: #cc6540;
   text-decoration: underline;
@@ -96,18 +98,22 @@ a:focus {
 
 /*______________________________________BUTTON STYLES_______________________________________________*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #4d63d4;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 600;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #a2aeeb; /* width of the border, type, color */
+  border-bottom: 2px solid #a2aeeb;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   color: #ffffff;
 }
@@ -118,11 +124,11 @@ a:focus {
   text-transform: uppercase;
   border: 2px solid #4d63d4;
 }
+
 .button.contact:hover {
   background-color: #4d63d4;
   color: #ffffff;
 }
-
 
 /*______________________________________HEADER STYLES_______________________________________________*/
 header {
@@ -137,9 +143,9 @@ header {
 }
 
 header {
--webkit-box-shadow: 0px 5px 3px -1px rgba(49, 50, 50, 0.19);
--moz-box-shadow:    0px 5px 3px -1px rgba(49, 50, 50, 0.19);
-box-shadow:         0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+  -webkit-box-shadow: 0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+  -moz-box-shadow: 0px 5px 3px -1px rgba(49, 50, 50, 0.19);
+  box-shadow: 0px 5px 3px -1px rgba(49, 50, 50, 0.19);
 }
 
 header .logo {
@@ -152,26 +158,26 @@ header .logo {
 }
 
 /*______________________________________MAIN CONTENT STYLES_______________________________________________*/
-
 /*______________________________________LAYOUT STYLES_______________________________________________*/
-
 .container {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .row {
-  margin: 15px 0; /* 15 px top and bottom, 0 left and right*/
+  margin: 15px 0;
+  /* 15 px top and bottom, 0 left and right*/
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 #work h2 {
   text-align: center;
 }
+
 main {
   padding-top: 10px;
 }
@@ -187,7 +193,6 @@ main {
 }
 
 /*______________________________________HEAD NAVIGATION STYLES_______________________________________________*/
-
 /* hides nav menu items*/
 .navtoggle li:not(:last-child) {
   display: none;
@@ -212,33 +217,32 @@ main {
   border-top: 1px solid #333335;
 }
 
-
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /*-------------------------------------------------------*/
-
-nav > ul { /* removes bullets from list in topnav */
+nav>ul {
+  /* removes bullets from list in topnav */
   list-style-type: none;
   padding: 0px;
 }
 
-nav > ul >li > a {
+nav>ul>li>a {
   padding: 0 11px;
   font-weight: 500;
   text-transform: uppercase;
   color: #ededed
 }
 
-nav > ul > li > a:hover {
-    color: #a2aeeb;
-    text-decoration: underline;
+nav>ul>li>a:hover {
+  color: #a2aeeb;
+  text-decoration: underline;
 }
 
-nav > ul > li > a:active {
-    color: #4d63d4;
-    text-decoration: underline;
+nav>ul>li>a:active {
+  color: #4d63d4;
+  text-decoration: underline;
 }
 
 /* _______________________________________________HERO STYLES______________________________________________________ */
@@ -265,6 +269,7 @@ nav > ul > li > a:active {
 #hero span {
   display: block;
 }
+
 /* _______________________________________________ABOUT ME STYLES______________________________________________________ */
 #aboutme {
   background-color: #f5f5f5;
@@ -343,6 +348,7 @@ nav > ul > li > a:active {
   margin-top: 25px;
   display: block;
 }
+
 #socials {
   background-color: #fbfbfb;
   padding-bottom: 10px;
@@ -351,29 +357,30 @@ nav > ul > li > a:active {
   display: inline-block;
 }
 
-#socials > ul {
+#socials>ul {
   list-style-type: none;
   padding: 0;
 }
 
-#socials > ul > li {
+#socials>ul>li {
   display: inline-block;
   margin: 0px;
 }
 
 #socials .row {
-  margin: 0px; /* 15 px top and bottom, 0 left and right*/
+  margin: 0px;
+  /* 15 px top and bottom, 0 left and right*/
 }
 
 /* _______________________________________________ADVOCARE STYLES______________________________________________________ */
-  #proj-advocare {
-    background-color: #f5f5f5;
-    display: inline-block;
-    width: 100%;
-    margin-top: 50px;
-  }
+#proj-advocare {
+  background-color: #f5f5f5;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
 
-  #proj-advocare h1 {
+#proj-advocare h1 {
   padding-top: 15px;
 }
 
@@ -391,7 +398,6 @@ nav > ul > li > a:active {
   padding-right: 34px;
   padding-top: 24px;
   padding-bottom: 24px;
-
 }
 
 #advo-box3 {
@@ -426,14 +432,14 @@ nav > ul > li > a:active {
   background-color: #ffffff;
 }
 
-  #advo-overview {
-    background-color: #fbfbfb;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 0px;
-    display: inline-block;
-  }
+#advo-overview {
+  background-color: #fbfbfb;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  display: inline-block;
+}
 
 #advo-role {
   margin-left: auto;
@@ -446,10 +452,10 @@ nav > ul > li > a:active {
   margin-left: 00px;
 }
 
-  #advo-problem {
-    background-color: #ffffff;
-    display: inline-block;
-  }
+#advo-problem {
+  background-color: #ffffff;
+  display: inline-block;
+}
 
 #user-research {
   background-color: #f5f5f5;
@@ -497,58 +503,62 @@ nav > ul > li > a:active {
   display: inline-block;
 }
 
-  #advo-design-its {
-    background-color: #f5f5f5;
-    display: inline-block;
-    width: 100%;
+#advo-design-its {
+  background-color: #f5f5f5;
+  display: inline-block;
+  width: 100%;
+}
+
+#advo-treatments {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin: 0px;
+  display: inline-block;
+}
+
+#advo-dash {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin: 0px;
+  display: inline-block;
+}
+
+#advo-visits {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin: 0px;
+  display: inline-block;
+}
+
+/* ____________________________________________CARFAC ON STYLES______________________________________________________ */
+#proj-carfac-on {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* ____________________________________________ANIMATION_____________________________________________________ */
+@keyframes color-change {
+  from {
+    fill: #edc655;
   }
 
-  #advo-treatments {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 18px;
-    margin: 0px;
-    display: inline-block;
+  to {
+    fill: #f76414;
   }
+}
 
-  #advo-dash {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 18px;
-    margin: 0px;
-    display: inline-block;
-  }
-
-  #advo-visits {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 18px;
-    margin: 0px;
-    display: inline-block;
-  }
-
-
-  /* ____________________________________________CARFAC ON STYLES______________________________________________________ */
-    #proj-carfac-on {
-      background-color: #f5f5f5;
-      padding: 20px 0;
-      display: inline-block;
-      width: 100%;
-    }
-  /* ____________________________________________ANIMATION_____________________________________________________ */
-
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-  }
-
-  .sun {
+.sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -557,8 +567,13 @@ nav > ul > li > a:active {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -570,280 +585,282 @@ nav > ul > li > a:active {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-  /* ____________________________________________MEDIA QUERIES______________________________________________________ */
-
+/* ____________________________________________MEDIA QUERIES______________________________________________________ */
 /*clear page flow*/
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-/*float all columns left*/
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  /*===============================
+/*float all columns left*/
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/*===============================
   Medium devices (640px or larger)
   ===============================*/
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 17px;
+  }
 
-    @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 20px;
+  }
 
-      body {
-        font-size: 17px;
-      }
+  main {
+    padding-top: 10px;
+  }
 
-      header {
-        text-align: unset;
-        padding: 20px 0 20px;
-      }
+  nav {
+    width: auto;
+    float: right;
+    padding-right: 20px;
+  }
 
-      main {
-        padding-top: 10px;
-      }
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-      nav {
-        width: auto;
-        float: right;
-        padding-right: 20px;
-      }
-
-.container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.col-md-3 {
-  width: 25%;
-  float: left;
-}
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
 
   .col-md-4 {
-  width: 33.33%;
-  float: left;
-    }
+    width: 33.33%;
+    float: left;
+  }
 
-      .col-md-5 {
-        width: 25%;
-        float: left;
-      }
+  .col-md-5 {
+    width: 25%;
+    float: left;
+  }
 
-      .col-md-6 {
-        width: 50%;
-        float: left;
-        padding-bottom: 40px;
-      }
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
 
-      .col-md-8 {
-        width: 66.66%;
-        float: left;
-      }
+  .col-md-8 {
+    width: 66.66%;
+    float: left;
+  }
 
-      .col-md-9 {
-        width: 75%;
-        float: left;
-      }
+  .col-md-9 {
+    width: 75%;
+    float: left;
+  }
 
-    header .logo {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-top: 20px;
-      padding-bottom: 5px;
-      max-width: 22%;
-    }
+  header .logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    max-width: 22%;
+  }
 
-    #aboutme {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-top: 90px;
-    }
+  #aboutme {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 90px;
+  }
 
-    #profilepic {
-      width: 45%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-#proj-advocare {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 90px;
-}
+  #profilepic {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#hero {
-  padding-top: 120px;
-}
+  #proj-advocare {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 90px;
+  }
 
-#advo-box {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  #hero {
+    padding-top: 120px;
+  }
 
-#advo-box3 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  #advo-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-#advo-box-userneeds {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  #advo-box3 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-#advo-box-designs #advo-box-designs2 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  #advo-box-userneeds {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
+  #advo-box-designs #advo-box-designs2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-#advo-illus1 {
-  max-width: 35%;
-  margin: auto;
-  padding-right: 40px;
-}
+  #advo-illus1 {
+    max-width: 35%;
+    margin: auto;
+    padding-right: 40px;
+  }
 
-/*------ MOBILE MENU TOGGLE---------/*
+  /*------ MOBILE MENU TOGGLE---------/*
 
 
 /* puts nav links on one line */
-nav > ul >li {
-  margin: 0;
+  nav>ul>li {
+    margin: 0;
+  }
+
+  /* nav items hidden only on mobile */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  /* hides hamburger menu icon on devices larger than mobile */
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
-/* nav items hidden only on mobile */
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-/* hides hamburger menu icon on devices larger than mobile */
-.navtoggle li:last-child {
-display: none;
-}
-
-
-}
-  /*===============================
+/*===============================
   Large devices (1024px or larger)
   ===============================*/
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
 
-    body {
-      font-size: 17px;
-    }
+  main {
+    padding-top: 10px;
+  }
 
-    main {
-      padding-top: 10px;
-    }
+  #hero {
+    padding-top: 110px;
+  }
 
-    #hero {
-      padding-top: 110px;
-    }
+  #aboutme {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
+  }
 
-    #aboutme {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-top: 80px;
-    }
+  header {
+    text-align: unset;
+    padding: 15px 0;
+  }
 
-    header {
-      text-align: unset;
-      padding: 15px 0;
-    }
+  nav {
+    width: auto;
+    float: right;
+    padding-right: 20px;
+  }
 
-    nav {
-      width: auto;
-      float: right;
-      padding-right: 20px;
-    }
+  header .logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    width: 30%;
+  }
 
-    header .logo {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-top: 18px;
-      padding-bottom: 5px;
-      width: 30%;
-    }
+  .col-lg-7 {
+    width: 58.33%;
+    float: left;
+    padding-bottom: 20px;
+  }
 
-    .col-lg-7 {
-      width: 58.33%;
-      float: left;
-      padding-bottom: 20px;
-    }
+  .col-lg-5 {
+    width: 41.66%;
+    float: left;
+    padding-bottom: 40px;
+  }
 
-    .col-lg-5 {
-      width: 41.66%;
-      float: left;
-      padding-bottom: 40px;
-    }
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
 
-    .col-lg-4 {
-      width: 33.33%;
-      float: left;
-    }
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
 
-    .col-lg-6 {
-      width: 50%;
-      float: left;
-    }
+  .container {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .container {
-      max-width: 850px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #profilepic {
-      width: 35%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #profilepic {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #advo-logo {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #advo-logo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #advo-role {
-      padding-left: 12px;
-      padding-right: 12px;
-    }
+  #advo-role {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
-    #advo-time {
-      padding-left: 50px;
-      padding-right: 12px;
-    }
+  #advo-time {
+    padding-left: 50px;
+    padding-right: 12px;
+  }
 
-    #advo-illus1 {
-      max-width: 35%;
-      margin: auto;
-      padding-right: 20px;
-    }
-    #img-treatments {
-      max-width: 70%;
-    }
+  #advo-illus1 {
+    max-width: 35%;
+    margin: auto;
+    padding-right: 20px;
+  }
 
-    #img-dashboard {
-      max-width: 70%;
-    }
+  #img-treatments {
+    max-width: 70%;
+  }
 
-    #img-visits {
-      max-width: 70%;
-    }
+  #img-dashboard {
+    max-width: 70%;
+  }
 
-#advo-box {
+  #img-visits {
+    max-width: 70%;
+  }
+
+  #advo-box {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 35px;
@@ -852,115 +869,114 @@ display: none;
   }
 
   #advo-box3 {
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-top: 35px;
-      padding-bottom: 20px;
-      background-color: #ffffff;
-    }
-
-    #advo-box-userneeds {
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 35px;
-        padding-bottom: 20px;
-        background-color: #ffffff;
-      }
-
-      #advo-box-usersat {
-          padding-left: 40px;
-          padding-right: 40px;
-          padding-top: 35px;
-          padding-bottom: 20px;
-          background-color: #ffffff;
-        }
-
-        #advo-box-designs #advo-box-designs2 {
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-top: 35px;
-            padding-bottom: 20px;
-            background-color: #ffffff;
-          }
-
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
   }
 
-  /*================================
+  #advo-box-userneeds {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  #advo-box-usersat {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  #advo-box-designs #advo-box-designs2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+  }
+}
+
+/*================================
   X-large devices (1440px or larger)
   ================================*/
-  @media only screen and (min-width: 1440px) {
-    body {
-      font-size: 19px;
-    }
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 19px;
+  }
 
-    header {
-      text-align: unset;
-      padding: 20px 20px 20px;
-    }
+  header {
+    text-align: unset;
+    padding: 20px 20px 20px;
+  }
 
-    nav {
-      width: auto;
-      float: right;
-      padding-right: 10px;
-    }
+  nav {
+    width: auto;
+    float: right;
+    padding-right: 10px;
+  }
 
-    header .logo {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 5px;
-      width: 16%;
-    }
+  header .logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 16%;
+  }
 
-    .col-xl-3 {
-      width: 25%;
-      float: left;
-      display: block;
-    }
+  .col-xl-3 {
+    width: 25%;
+    float: left;
+    display: block;
+  }
 
-    .col-xl-4 {
-      width: 33.33%;
-      float: left;
-      display: block;
-    }
+  .col-xl-4 {
+    width: 33.33%;
+    float: left;
+    display: block;
+  }
 
+  .col-xl-8 {
+    width: 66.66%;
+    float: left;
+    display: block;
+  }
 
-.col-xl-8 {
-  width: 66.66%;
-  float: left;
-  display: block;
+  .col-xl-9 {
+    width: 75%;
+    float: left;
+    display: block;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #advocare-stat1 {
+    max-width: 300px;
+    float: right;
+  }
+
+  #advo-illus1 {
+    max-width: 30%;
+    margin-right: 50px;
+  }
+
+  #hero {
+    padding-top: 130px;
+  }
+
+  #aboutme {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+  }
 }
-
-.col-xl-9 {
-  width: 75%;
-  float: left;
-  display: block;
-}
-      .container {
-        max-width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #advocare-stat1 {
-        max-width: 300px;
-        float: right;
-      }
-
-      #advo-illus1 {
-        max-width: 30%;
-        margin-right: 50px;
-      }
-
-      #hero {
-        padding-top: 130px;
-      }
-
-      #aboutme {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 120px;
-      }
-      }
